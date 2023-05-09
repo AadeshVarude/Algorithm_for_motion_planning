@@ -52,35 +52,3 @@ This template is only provided as a start point, feel free to make any modificat
 
 <img src="demo/RRT_star.png" width="300"/> <img src="demo/informed_RRT_star.png" width="300"/>
 
-## Rubrics
-
-- (4 pts) Your D* is implemented correctly
-
-  - The **run** function is implemented correctly with two main steps
-  - The **process_state** function is implemented correctly to pop the node, process the node and its neighbors based on its state.
-  - The **prepare_repair** function is implemented correctly to locate the nodes that need to be updated
-  - The **modify_cost** function is implemented correctly to update the cost and put nodes in Open list
-  - The **repair_replan** function is implemented correctly to replan a path from current node
-  
-  ---
-  
-- (2 pts) Your Informed RRT* are implemented correctly
-
-  - Best length of the path is updated once a path is found
-  - Sampling methods are used depending on the c_best value
-  - Samples are casted in an ellipsoid once a path is found
-  
-  ---
-  
-- (1 pts) Documentation
-
-  Besides the code, you should also include a documentation with the following content:
-
-  - Briefly answer the following questions
-
-    - Explain in your own words, how does D* replan a path by updating the cost?
-    - Why does D* can replan faster than A* or Dijkstra?
-    - What is the key differences between regular RRT* and informed RRT*?
-    - By showing and comparing the results of RRT* and informed RRT*, what is the advantages of using the latter?
-  
-  Include the documentation as a pdf file, or if you prefer, a md file.
